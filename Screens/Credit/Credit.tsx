@@ -25,95 +25,99 @@ function Credit() {
 					/>
 				</View>
 			</View>
-			<View
-				style={{
-					display: "flex",
-					flexDirection: "row",
-					justifyContent: "space-between",
-					paddingBottom: 20,
-				}}>
-				<View style={styles.secondPart}>
-					<Text style={{ fontSize: 20, fontWeight: "300", color: "#8388b1" }}>
-						Your Card information
-					</Text>
-					<Text style={{ fontSize: 55, fontWeight: "500", color: "#121e02" }}>
-						All Credit Cards <Text style={{ color: "#8388b1" }}>(2)</Text>
-					</Text>
+			<ScrollView>
+				<View
+					style={{
+						display: "flex",
+						flexDirection: "row",
+						justifyContent: "space-between",
+						paddingBottom: 20,
+					}}>
+					<View style={styles.secondPart}>
+						<Text style={{ fontSize: 20, fontWeight: "300", color: "#8388b1" }}>
+							Your Card information
+						</Text>
+						<Text style={{ fontSize: 55, fontWeight: "500", color: "#121e02" }}>
+							All Credit Cards <Text style={{ color: "#8388b1" }}>(2)</Text>
+						</Text>
+					</View>
+					<ToggleSwitch />
 				</View>
-				<ToggleSwitch />
-			</View>
-			<View style={styles.cardPlace}>
-				<View style={styles.partOne}>
-					<Text style={{ color: "white", fontSize: 25, fontWeight: "500" }}>
-						**** 5482
-					</Text>
-					<Image source={require("../../assets/logo1.png")} />
-				</View>
-				<View style={styles.partTwo}>
-					<View style={styles.partThree}>
+				<View style={styles.cardPlace}>
+					<View style={styles.partOne}>
 						<Text style={{ color: "white", fontSize: 25, fontWeight: "500" }}>
 							**** 5482
 						</Text>
-						<Image source={require("../../assets/logo2.png")} />
+						<Image source={require("../../assets/logo1.png")} />
 					</View>
-					<View style={styles.partThree}>
-						<View>
-							<Text style={{ color: "white", fontSize: 15, fontWeight: "500" }}>
-								Card owner
+					<View style={styles.partTwo}>
+						<View style={styles.partThree}>
+							<Text style={{ color: "white", fontSize: 25, fontWeight: "500" }}>
+								**** 5482
 							</Text>
-							<Text style={{ color: "white", fontSize: 22, fontWeight: "700" }}>
-								Jordan Smith
-							</Text>
+							<Image source={require("../../assets/logo2.png")} />
 						</View>
-						<Text style={{ fontSize: 18, color: "white" }}>04/24</Text>
+						<View style={styles.partThree}>
+							<View>
+								<Text
+									style={{ color: "white", fontSize: 15, fontWeight: "500" }}>
+									Card owner
+								</Text>
+								<Text
+									style={{ color: "white", fontSize: 22, fontWeight: "700" }}>
+									Jordan Smith
+								</Text>
+							</View>
+							<Text style={{ fontSize: 18, color: "white" }}>04/24</Text>
+						</View>
 					</View>
 				</View>
-			</View>
-			<View style={styles.secondPart}>
-				<Text style={{ fontSize: 20, fontWeight: "300", color: "#8388b1" }}>
-					Latest
-				</Text>
-				<Text style={{ fontSize: 40, fontWeight: "400", color: "#121e02" }}>
-					Transactions
-				</Text>
-			</View>
-			<ScrollView>
-				<View style={styles.cards}>
-					<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
-						<View style={styles.cardIcon}>
-							<Image
-								src="https://helios-i.mashable.com/imagery/articles/03y6VwlrZqnsuvnwR8CtGAL/hero-image.fill.size_1248x702.v1623372852.jpg"
-								style={styles.cardIcon}
-							/>
-						</View>
-						<View style={{ paddingTop: 9 }}>
-							<Text>Uber</Text>
-							<Text style={{ fontSize: 13, color: "#5d6160" }}>
-								Today,17:10
-							</Text>
-						</View>
-					</View>
-					<View style={{ paddingRight: 12 }}>
-						<Text>-$17</Text>
-					</View>
+				<View style={styles.secondPart}>
+					<Text style={{ fontSize: 20, fontWeight: "300", color: "#8388b1" }}>
+						Latest
+					</Text>
+					<Text style={{ fontSize: 40, fontWeight: "400", color: "#121e02" }}>
+						Transactions
+					</Text>
 				</View>
-				<View style={styles.cards}>
-					<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
-						<View style={styles.cardIcon}>
-							<Image
-								src="https://www.1min30.com/wp-content/uploads/2018/02/Symbole-Lidl.jpg"
-								style={styles.cardIcon}
-							/>
+				<View>
+					<View style={styles.cards}>
+						<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
+							<View style={styles.cardIcon}>
+								<Image
+									src="https://helios-i.mashable.com/imagery/articles/03y6VwlrZqnsuvnwR8CtGAL/hero-image.fill.size_1248x702.v1623372852.jpg"
+									style={styles.cardIcon}
+								/>
+							</View>
+							<View style={{ paddingTop: 9 }}>
+								<Text>Uber</Text>
+								<Text style={{ fontSize: 13, color: "#5d6160" }}>
+									Today,17:10
+								</Text>
+							</View>
 						</View>
-						<View style={{ paddingTop: 9 }}>
-							<Text>Lidl</Text>
-							<Text style={{ fontSize: 13, color: "#5d6160" }}>
-								Today,17:10
-							</Text>
+						<View style={{ paddingRight: 12 }}>
+							<Text>-$17</Text>
 						</View>
 					</View>
-					<View style={{ paddingRight: 12 }}>
-						<Text>-$12</Text>
+					<View style={styles.cards}>
+						<View style={{ display: "flex", flexDirection: "row", gap: 8 }}>
+							<View style={styles.cardIcon}>
+								<Image
+									src="https://www.1min30.com/wp-content/uploads/2018/02/Symbole-Lidl.jpg"
+									style={styles.cardIcon}
+								/>
+							</View>
+							<View style={{ paddingTop: 9 }}>
+								<Text>Lidl</Text>
+								<Text style={{ fontSize: 13, color: "#5d6160" }}>
+									Today,17:10
+								</Text>
+							</View>
+						</View>
+						<View style={{ paddingRight: 12 }}>
+							<Text>-$12</Text>
+						</View>
 					</View>
 				</View>
 			</ScrollView>
